@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Xtract - Intelligent Automation for Modern Businesses",
-  description: "Xtract brings AI automation to your fingertips & streamline tasks. We design, develop, and implement automation tools that help you work smarter, not harder.",
+  title: "Lunova",
+  description: "Lunova ofrece servicios profesionales de diseño y desarrollo web. Creamos sitios web modernos, responsivos y personalizados que ayudan a impulsar tu presencia digital de manera efectiva.",
+  icons: {
+    icon: "/images/lunovaIcon.png",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="es" className={ `scroll-smooth dark ${geistSans.variable} ${geistMono.variable}`}>
       <head>
         <Script
           crossOrigin="anonymous"

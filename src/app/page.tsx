@@ -6,76 +6,64 @@ import { ChevronDown, ChevronRight, Star, CheckCircle, Zap, Clock, DollarSign, T
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white scroll-smooth">
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-violet-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">X</span>
-              </div>
-              <span className="text-xl font-bold">XTRACT</span>
+              <span className="text-xl font-bold">Lunova</span>
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
               <a href="#" className="text-white hover:text-purple-400 transition-colors">Home</a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">About</a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Blog</a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Contact</a>
+              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Acerca de</a>
+              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Contacto</a>
             </nav>
 
-            <Button className="gradient-purple hover:opacity-90 transition-opacity">
-              Book a call
-            </Button>
+              <a href="https://wa.me/5216871717189?text=Hola%20%F0%9F%91%8B%20me%20interesa%20saber%20m%C3%A1s%20sobre%20las%20p%C3%A1ginas%20web%20que%20ofrecen.%20%C2%BFPodr%C3%ADan%20darme%20informaci%C3%B3n%20sobre%20los%20planes%20y%20c%C3%B3mo%20funciona%20el%20proceso%3F%20Gracias. " target="_blank" rel="noopener noreferrer">
+                <Button className="gradient-purple hover:opacity-90 transition-opacity">
+                  Contactar Ahora
+                </Button>
+              </a>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="h-screen pt-32 pb-20 px-6 relative overflow-hidden">
         <div className="absolute inset-0 gradient-purple-glow"></div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <Badge className="mb-6 bg-purple-500/20 text-purple-300 border-purple-500/30">
+          <Badge className="mb-16 bg-purple-500/20 text-purple-300 border-purple-500/30">
             <span className="bg-purple-500 text-white px-2 py-1 rounded text-xs mr-2">New</span>
-            Automated Lead Generation
+            Diseño Web y Desarrollo de Software
           </Badge>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Intelligent Automation for Modern
+          <h1 className="text-5xl md:text-6xl font-bold mb-12 leading-tight">
+            Diseño Web Profesional para
             <br />
-            <span className="gradient-purple bg-clip-text text-transparent">Businesses.</span>
+            <span className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-[#9d174d] via-[#d946ef] to-[#f0abfc] bg-clip-text text-transparent">Negocios Modernos.</span>
           </h1>
 
-          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-            Xtract brings AI automation to your fingertips & streamline tasks.
+          <p className="text-xl text-gray-400 mb-24 max-w-3xl mx-auto">
+            Lunova proporciona soluciones de diseño web y desarrollo de software a negocios modernos.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gradient-purple hover:opacity-90">
-              Get in touch
-            </Button>
-            <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800">
-              View services
-            </Button>
+              <a href="https://wa.me/5216871717189?text=Hola%20%F0%9F%91%8B%20me%20interesa%20saber%20m%C3%A1s%20sobre%20las%20p%C3%A1ginas%20web%20que%20ofrecen.%20%C2%BFPodr%C3%ADan%20darme%20informaci%C3%B3n%20sobre%20los%20planes%20y%20c%C3%B3mo%20funciona%20el%20proceso%3F%20Gracias. " target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="gradient-purple hover:opacity-90">
+                  Contactar Ahora
+                </Button>
+              </a>
+              <a href="#services">
+                <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800">
+                  Ver Servicios
+                </Button>
+              </a>
           </div>
 
           <div className="mt-16 flex flex-col items-center">
-            <p className="text-gray-400 mb-6">Over 50+ business trust us</p>
-            <div className="flex items-center space-x-8 opacity-50">
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 bg-gray-600 rounded"></div>
-                <span className="text-gray-500">Logoipsum</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 bg-gray-600 rounded"></div>
-                <span className="text-gray-500">Logoipsum</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 bg-gray-600 rounded"></div>
-                <span className="text-gray-500">Logoipsum</span>
-              </div>
-            </div>
+            <p className="text-gray-400 mb-6">Más de 50+ empresas confían en nosotros</p>
           </div>
         </div>
       </section>
@@ -84,14 +72,14 @@ export default function Home() {
       <section className="py-20 px-6" id="services">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-purple-400 mb-4">Our Services</p>
+            <p className="text-purple-400 mb-4">Nuestros Servicios</p>
             <h2 className="text-4xl font-bold mb-6">
-              AI Solutions That Take Your Business to
+              Soluciones de Diseño Web y Desarrollo de Software
               <br />
-              the Next Level
+              para Negocios Modernos
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto">
-              We design, develop, and implement automation tools that help you work smarter, not harder
+              Diseñamos, desarrollamos e implementamos herramientas que te ayudan a ser más eficiente.
             </p>
           </div>
 
@@ -100,39 +88,38 @@ export default function Home() {
             <div className="lg:col-span-2">
               <Card className="bg-gray-900/50 border-gray-800 h-full">
                 <CardHeader>
-                  <Badge className="w-fit bg-gray-800 text-gray-300">Workflow Automation</Badge>
-                  <CardTitle className="text-2xl">Automate repetitive tasks</CardTitle>
+                  <Badge className="w-fit bg-gray-800 text-gray-300">Presencia Digital</Badge>
+                  <CardTitle className="text-2xl">Creamos tu presencia en línea</CardTitle>
                   <CardDescription className="text-gray-400">
-                    We help you streamline internal operations by automating manual workflows like data entry,
-                    reporting, and approval chains saving time and cutting down errors.
+                    Te ayudamos a construir una presencia en línea sólida y profesional que refleje tu marca y tus valores.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-black/50 rounded-lg p-4">
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-sm text-gray-400">All Tasks</span>
-                      <span className="text-sm text-gray-400">Waiting for approval</span>
+                      <span className="text-sm text-gray-400">Todas las Tareas</span>
+                      <span className="text-sm text-gray-400">Esperando aprobación</span>
                     </div>
                     <div className="space-y-3">
                       <div className="flex items-center justify-between p-3 bg-gray-800/50 rounded">
                         <div>
-                          <p className="text-sm font-medium">Payroll management</p>
-                          <p className="text-xs text-gray-400">Due on 2nd july</p>
+                          <p className="text-sm font-medium">Creamos tu sitio web</p>
+                          <p className="text-xs text-gray-400">Vence el 2 de julio</p>
                         </div>
                         <CheckCircle className="w-4 h-4 text-green-500" />
                       </div>
                       <div className="flex items-center justify-between p-3 bg-gray-800/50 rounded">
                         <div>
-                          <p className="text-sm font-medium">Employee Tracking</p>
-                          <p className="text-xs text-gray-400">2 days ago</p>
+                          <p className="text-sm font-medium">Despliegue de Aplicaciones</p>
+                          <p className="text-xs text-gray-400">Hace 2 días</p>
                         </div>
                         <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
                       </div>
                     </div>
                   </div>
                   <div className="flex gap-2 mt-4">
-                    <Badge className="bg-purple-500/20 text-purple-300">Internal Task Bots</Badge>
-                    <Badge className="bg-purple-500/20 text-purple-300">100+ Automations</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Desarrollo de Aplicaciones</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">100+ Diseños Web</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -142,10 +129,10 @@ export default function Home() {
             <div>
               <Card className="bg-gray-900/50 border-gray-800 h-full">
                 <CardHeader>
-                  <Badge className="w-fit bg-gray-800 text-gray-300">AI Assistant</Badge>
-                  <CardTitle>Delegate Daily Tasks</CardTitle>
+                  <Badge className="w-fit bg-gray-800 text-gray-300">E-commerce</Badge>
+                  <CardTitle>Desarrollo de E-commerce</CardTitle>
                   <CardDescription className="text-gray-400">
-                    From managing calendars to drafting emails and summarizing meetings, our AI assistants work around the clock.
+                    Desarrollamos tiendas en línea personalizadas que se adaptan a tus necesidades y objetivos.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -155,15 +142,15 @@ export default function Home() {
                         <Zap className="w-8 h-8 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-center mb-2">What can I help with?</h3>
+                    <h3 className="text-center mb-2">Mas ventas de tu tienda en línea</h3>
                     <p className="text-center text-xs text-gray-400">
-                      Weather you want help in customer handling or make changes in your system just give me command
+                      Mejora tus ventas en línea con nuestra ayuda.
                     </p>
                   </div>
                   <div className="flex gap-2 flex-wrap">
-                    <Badge className="bg-purple-500/20 text-purple-300">Summaries</Badge>
-                    <Badge className="bg-purple-500/20 text-purple-300">Scheduling</Badge>
-                    <Badge className="bg-purple-500/20 text-purple-300">Many more</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Deportes</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Ropa</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Mucho más</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -173,10 +160,10 @@ export default function Home() {
             <div>
               <Card className="bg-gray-900/50 border-gray-800 h-full">
                 <CardHeader>
-                  <Badge className="w-fit bg-gray-800 text-gray-300">Sales & Marketing</Badge>
-                  <CardTitle>Accelerate Sales Growth</CardTitle>
+                  <Badge className="w-fit bg-gray-800 text-gray-300">Ventas y Marketing</Badge>
+                  <CardTitle>Acelera el Crecimiento de Ventas</CardTitle>
                   <CardDescription className="text-gray-400">
-                    AI tools for lead generation, personalized outreach, and automated content creation.
+                    Herramientas de IA para generación de leads, comunicación personalizada y creación automatizada de contenido.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -185,15 +172,15 @@ export default function Home() {
                       <div className="flex items-center gap-2">
                         <Users className="w-4 h-4 text-purple-400" />
                         <span className="text-sm">Jack Daniel</span>
-                        <Badge className="bg-green-500/20 text-green-300 text-xs">Verified</Badge>
+                        <Badge className="bg-green-500/20 text-green-300 text-xs">Verificado</Badge>
                       </div>
-                      <p className="text-xs text-gray-400">Founder</p>
+                      <p className="text-xs text-gray-400">Fundador</p>
                     </div>
                   </div>
                   <div className="flex gap-2 flex-wrap">
                     <Badge className="bg-purple-500/20 text-purple-300">Leads</Badge>
-                    <Badge className="bg-purple-500/20 text-purple-300">Content</Badge>
-                    <Badge className="bg-purple-500/20 text-purple-300">Social post</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Contenido</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Publicaciones sociales</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -203,24 +190,24 @@ export default function Home() {
             <div className="lg:col-span-2">
               <Card className="bg-gray-900/50 border-gray-800 h-full">
                 <CardHeader>
-                  <Badge className="w-fit bg-gray-800 text-gray-300">Custom Projects</Badge>
-                  <CardTitle className="text-2xl">Build Smarter Systems</CardTitle>
+                  <Badge className="w-fit bg-gray-800 text-gray-300">Proyectos Personalizados</Badge>
+                  <CardTitle className="text-2xl">Construye Sistemas más Inteligentes</CardTitle>
                   <CardDescription className="text-gray-400">
-                    Whether you're starting from scratch or enhancing an existing system, we offer strategic
-                    consulting and develop custom AI projects aligned with your unique goals.
+                    Ya sea que estés comenzando desde cero o mejorando un sistema existente, ofrecemos consultoría
+                    estratégica y desarrollamos proyectos personalizados alineados con tus objetivos únicos.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-black/50 rounded-lg p-4 mb-4">
                     <div className="flex items-center justify-between mb-4">
-                      <h4 className="font-medium">Hey David!</h4>
-                      <span className="text-xs text-gray-400">Here is your Custom project & schedule</span>
+                      <h4 className="font-medium">¡Hola David!</h4>
+                      <span className="text-xs text-gray-400">Aquí está tu proyecto personalizado y calendario</span>
                     </div>
                     <div className="bg-gray-800/50 rounded p-3 mb-3">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-sm font-medium">Customer Support Chatbot</p>
-                          <p className="text-xs text-gray-400">90% Finished</p>
+                          <p className="text-sm font-medium">Chatbot de Atención al Cliente</p>
+                          <p className="text-xs text-gray-400">90% Completado</p>
                         </div>
                         <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
                           <CheckCircle className="w-4 h-4 text-white" />
@@ -228,15 +215,15 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="grid grid-cols-7 gap-1 text-xs">
-                      {['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'].map((day) => (
+                      {['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa', 'Do'].map((day) => (
                         <div key={day} className="text-center text-gray-400 py-1">{day}</div>
                       ))}
                     </div>
                   </div>
                   <div className="flex gap-2 flex-wrap">
-                    <Badge className="bg-purple-500/20 text-purple-300">Strategy</Badge>
-                    <Badge className="bg-purple-500/20 text-purple-300">Custom AI</Badge>
-                    <Badge className="bg-purple-500/20 text-purple-300">Consulting</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Estrategia</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">IA Personalizada</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300">Consultoría</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -245,44 +232,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Sección de Proceso */}
       <section className="py-20 px-6" id="process">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-purple-400 mb-4">Our Process</p>
+            <p className="text-purple-400 mb-4">Nuestro Proceso</p>
             <h2 className="text-4xl font-bold mb-6">
-              Our Simple, Smart, and Scalable Process
+              Un Proceso Simple, Inteligente y Escalable
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto">
-              We design, develop, and implement automation tools that help you work smarter, not harder
+              Diseñamos, desarrollamos e implementamos herramientas que te ayudan a trabajar de forma más inteligente.
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                step: "Step 1",
-                title: "Smart Analyzing",
-                description: "We assess your needs and identify AI solutions to streamline workflows and improve efficiency.",
-                features: ["System check", "Process check", "Speed check", "Manual work", "Repetitive task"]
+                step: "Paso 1",
+                title: "Análisis Inteligente",
+                description: "Evaluamos tus necesidades e identificamos soluciones para optimizar flujos de trabajo y mejorar la eficiencia.",
+                features: ["Chequeo de sistema", "Chequeo de procesos", "Chequeo de velocidad", "Trabajo manual", "Tarea repetitiva"]
               },
               {
-                step: "Step 2",
-                title: "AI Development",
-                description: "Our team builds intelligent automation systems tailored to your business processes.",
-                features: ["Code Development", "AI Training", "Testing", "Integration"]
+                step: "Paso 2",
+                title: "Desarrollo",
+                description: "Nuestro equipo construye sistemas adaptados a tus procesos de negocio.",
+                features: ["Desarrollo de código", "Pruebas", "Integración"]
               },
               {
-                step: "Step 3",
-                title: "Seamless Integration",
-                description: "We smoothly integrate AI solutions into your existing infrastructure with minimal disruption.",
-                features: ["Our solution", "Your stack", "Integration", "Testing"]
+                step: "Paso 3",
+                title: "Integración Sin Fricciones",
+                description: "Integramos soluciones en tu infraestructura existente con mínima interrupción.",
+                features: ["Nuestra solución", "Tu stack", "Integración", "Pruebas"]
               },
               {
-                step: "Step 4",
-                title: "Continuous Optimization",
-                description: "We refine performance, analyze insights, and enhance automation for long-term growth.",
-                features: ["Performance", "Analytics", "Updates", "Growth"]
+                step: "Paso 4",
+                title: "Optimización Continua",
+                description: "Refinamos el rendimiento, analizamos resultados y mejoramos la automatización para un crecimiento a largo plazo.",
+                features: ["Rendimiento", "Analítica", "Actualizaciones", "Crecimiento"]
               }
             ].map((item, index) => (
               <Card key={index} className="bg-gray-900/50 border-gray-800">
@@ -311,135 +297,129 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Case Studies Section */}
+      {/* Sección de Casos de Éxito */}
       <section className="py-20 px-6" id="case-studies">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-purple-400 mb-4">Case Studies</p>
+            <p className="text-purple-400 mb-4">Casos de Éxito</p>
             <h2 className="text-4xl font-bold mb-6">
-              See How Smart AI Automation
+              Descubre cómo la presencia en línea
               <br />
-              Transforms Businesses
+              Transforma Negocios
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto">
-              See how AI automation streamlines operations, boosts and drives growth.
+              Descubre cómo la presencia en línea optimiza operaciones, impulsa y acelera el crecimiento.
             </p>
           </div>
-
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            {/* TrailForge Case Study */}
+            {/* Caso TrailForge */}
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0"></div>
+                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1495573020741-8a2f372bbec3?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}></div>
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-purple-300">
-                      "AI-driven forecasting cut inventory waste by 40% for TrailForge"
+                      "Una Landing Page profesional aumentó los contactos en un 220% para Dental Nova"
                     </h3>
                     <p className="text-gray-400 text-sm">
-                      TrailForge, a suitcase brand, faced stock issues and inefficiencies. Our AI forecasting optimized inventory and production cycles, helping them save costs and deliver faster.
+                     Dental Nova, una clínica dental en crecimiento, tenía solo presencia en redes sociales. Creamos una Landing Page clara, moderna y enfocada en agendar citas, integrada con WhatsApp y Google Maps.
                     </p>
                   </div>
                 </div>
-
                 <div className="mb-4">
-                  <p className="text-sm font-medium text-purple-300 mb-3">Impact :</p>
+                  <p className="text-sm font-medium text-purple-300 mb-3">Impacto :</p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center gap-2">
                       <TrendingUp className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">40% Less Inventory Waste</span>
+                      <span className="text-sm">220% más solicitudes de cita en 3 semanas</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Zap className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">35% Faster Production</span>
+                      <span className="text-sm">3 veces más tráfico orgánico desde búsquedas locales</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <TrendingUp className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">20% More Accurate Forecasting</span>
+                      <span className="text-sm">Reducción del 100% en mensajes mal redactados o incompletos</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">25% Faster Fulfillment</span>
+                      <span className="text-sm">Posicionamiento en Google Maps gracias a SEO local básico</span>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
-
-            {/* MedixChain Case Study */}
+            {/* Caso MedixChain */}
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0"></div>
+                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}></div>
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-purple-300">
-                      "AI-powered workflows reduced error rate by 80% in daily operations"
+                      "Una tienda online aumentó las ventas mensuales en un 180% para Luma Cosmética"
                     </h3>
                     <p className="text-gray-400 text-sm">
-                      MedixChain, a healthcare logistics company, was dealing with frequent data errors and delays. We introduced AI validation and live tracking to improve accuracy and speed.
+                      Luma vendía por Instagram pero perdía ventas por falta de organización. Le desarrollamos un e-commerce ligero con pasarela de pago y catálogo autogestionable.
                     </p>
                   </div>
                 </div>
-
                 <div className="mb-4">
-                  <p className="text-sm font-medium text-purple-300 mb-3">Impact :</p>
+                  <p className="text-sm font-medium text-purple-300 mb-3">Impacto :</p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">80% Error reduction</span>
+                      <span className="text-sm">180% más ventas el primer mes</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <TrendingUp className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">90% Accuracy in Data Logs</span>
+                      <span className="text-sm">60% menos mensajes repetidos en redes sociales</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">30% Faster Delivery</span>
+                      <span className="text-sm">30% entregas más rápidas</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Zap className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">60+ Hours Saved</span>
+                      <span className="text-sm">60+ horas ahorradas</span>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
-
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* ScaleByte Case Study */}
+            {/* Caso ScaleByte */}
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0"></div>
+                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}></div>
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-purple-300">
-                      "AI integration helped ScaleByte close 3x more deals in less time"
+                      "Un menú digital redujo el tiempo de atención en un 50% y mejoró la imagen de marca para Las Brasas"
                     </h3>
                     <p className="text-gray-400 text-sm">
-                      ScaleBytes sales team struggled with follow-up delays. Our AI sales assistant automated outreach, lead scoring, and CRM updates resulting in faster responses.
+                      Las Brasas, restaurante de parrilladas, solo usaba menús físicos. Desarrollamos una página web tipo app con menú visual, ingredientes, precios y botón directo a WhatsApp para pedidos.
                     </p>
                   </div>
                 </div>
-
                 <div className="mb-4">
-                  <p className="text-sm font-medium text-purple-300 mb-3">Impact :</p>
+                  <p className="text-sm font-medium text-purple-300 mb-3">Impacto :</p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center gap-2">
                       <TrendingUp className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">3x More Deals</span>
+                      <span className="text-sm">50% menos tiempo explicando el menú en mesa</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">40% Faster Responses</span>
+                      <span className="text-sm">70% más pedidos a domicilio vía WhatsApp</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">95% Lead Accuracy</span>
+                      <span className="text-sm">Mejora notable en comentarios de clientes sobre imagen profesional</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Zap className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">CRM Fully Synced</span>
+                      <span className="text-sm">Compatible con código QR en todas las mesas</span>
                     </div>
                   </div>
                 </div>
@@ -450,35 +430,35 @@ export default function Home() {
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-8">
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0"></div>
+                  <div className="w-20 h-20 bg-gray-700 rounded-lg flex-shrink-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}></div>
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-purple-300">
-                      "Automating 50% of operations saved 20% in costs in 2 months"
+                      "Un sitio web profesional aumentó la credibilidad y generó 5 nuevos contratos en el primer mes para Impulso Consulting"
                     </h3>
                     <p className="text-gray-400 text-sm">
-                      FinSolve, a financial services firm, was overloaded with repetitive tasks. By automating workflows and integrating data systems, they streamlined operations.
+                      Impulso Consulting, una firma de asesoría empresarial, no contaba con presencia digital profesional y perdía oportunidades por falta de confianza. Diseñamos un sitio web corporativo moderno con testimonios, portafolio y formulario de contacto personalizado.
                     </p>
                   </div>
                 </div>
 
                 <div className="mb-4">
-                  <p className="text-sm font-medium text-purple-300 mb-3">Impact :</p>
+                  <p className="text-sm font-medium text-purple-300 mb-3">Impacto :</p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center gap-2">
                       <Zap className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">50% Operations Automated</span>
+                      <span className="text-sm">Fortalecimiento de marca y percepción profesional</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <DollarSign className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">20% Cost Reduction</span>
+                      <span className="text-sm">+5 contratos cerrados en el primer mes gracias al sitio web</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">70+ Hours Saved/Month</span>
+                      <span className="text-sm">120% más solicitudes desde LinkedIn y Google</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <TrendingUp className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">2x Faster Client Onboarding</span>
+                      <span className="text-sm">Reducción del ciclo de ventas en un 30%</span>
                     </div>
                   </div>
                 </div>
@@ -492,15 +472,15 @@ export default function Home() {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-purple-400 mb-4">Benefits</p>
+            <p className="text-purple-400 mb-4">Beneficios</p>
             <h2 className="text-4xl font-bold mb-6">
-              The Key Benefits of AI
+              Los Beneficios Clave de la IA
               <br />
-              for Your Business Growth
+              para el Crecimiento de tu Negocio
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto">
-              Discover how AI automation enhances efficiency, reduces costs, and drives business
-              growth with smarter, faster processes.
+              Descubre cómo la automatización con IA mejora la eficiencia, reduce costos e impulsa el
+              crecimiento empresarial con procesos más inteligentes y rápidos.
             </p>
           </div>
 
@@ -508,33 +488,33 @@ export default function Home() {
             {[
               {
                 icon: <Zap className="w-8 h-8" />,
-                title: "Increased Productivity",
-                description: "Gain actionable insights with AI-driven analytics to improve decision-making and strategy."
+                title: "Mayor Productividad",
+                description: "Obtén información procesable con análisis impulsados por IA para mejorar la toma de decisiones y la estrategia."
               },
               {
                 icon: <Users className="w-8 h-8" />,
-                title: "Better Customer Experience",
-                description: "Personalized AI interactions improve response times, customer engagement, and overall satisfaction."
+                title: "Mejor Experiencia del Cliente",
+                description: "Las interacciones personalizadas con IA mejoran los tiempos de respuesta, el compromiso del cliente y la satisfacción general."
               },
               {
                 icon: <Clock className="w-8 h-8" />,
-                title: "24/7 Availability",
-                description: "AI-powered systems operate around the clock, ensuring seamless support and execution without downtime."
+                title: "Disponibilidad 24/7",
+                description: "Los sistemas impulsados por IA operan las 24 horas, garantizando soporte y ejecución sin interrupciones."
               },
               {
                 icon: <DollarSign className="w-8 h-8" />,
-                title: "Cost Reduction",
-                description: "AI automation minimizes manual work, cuts operational costs, and optimizes resource allocation."
+                title: "Reducción de Costos",
+                description: "La automatización con IA minimiza el trabajo manual, reduce costos operativos y optimiza la asignación de recursos."
               },
               {
                 icon: <TrendingUp className="w-8 h-8" />,
-                title: "Data-Driven Insights",
-                description: "Leverage AI to analyze vast data sets, identify trends, and make smarter business decisions."
+                title: "Análisis Basado en Datos",
+                description: "Aprovecha la IA para analizar grandes conjuntos de datos, identificar tendencias y tomar decisiones comerciales más inteligentes."
               },
               {
                 icon: <Globe className="w-8 h-8" />,
-                title: "Scalability & Growth",
-                description: "AI adapts to your business needs, allowing you to scale efficiently without increasing workload."
+                title: "Escalabilidad y Crecimiento",
+                description: "La IA se adapta a las necesidades de tu negocio, permitiéndote escalar eficientemente sin aumentar la carga de trabajo."
               }
             ].map((benefit, index) => (
               <Card key={index} className="bg-gray-900/50 border-gray-800 hover:bg-gray-800/50 transition-colors">
@@ -553,23 +533,13 @@ export default function Home() {
       <section className="py-20 px-6" id="pricing">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-purple-400 mb-4">Pricing</p>
+            <p className="text-purple-400 mb-4">Precios</p>
             <h2 className="text-4xl font-bold mb-6">
-              The Best AI Automation, at the Right Price
+              El Mejor Diseño Web, al Precio Correcto
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto">
-              Choose a plan that fits your business needs and start automating with AI
+              Elige un plan que se ajuste a las necesidades de tu negocio
             </p>
-
-            <div className="flex items-center justify-center mt-8 gap-4">
-              <span className="text-gray-400">Monthly</span>
-              <div className="relative">
-                <div className="w-12 h-6 bg-purple-500 rounded-full flex items-center justify-end pr-1">
-                  <div className="w-4 h-4 bg-white rounded-full"></div>
-                </div>
-              </div>
-              <span className="text-white">Annually</span>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -578,25 +548,27 @@ export default function Home() {
               <CardHeader className="text-center">
                 <div className="flex items-center gap-2 mb-2">
                   <Zap className="w-5 h-5" />
-                  <span className="font-semibold">Starter</span>
+                  <span className="font-semibold">Inicial</span>
                 </div>
                 <div className="text-3xl font-bold">
-                  $37<span className="text-lg text-gray-400">/month</span>
+                  $3499<span className="text-lg text-gray-400">/mxn</span>
                 </div>
-                <p className="text-gray-400">Perfect for small businesses starting with AI automation.</p>
+                <p className="text-gray-400">Perfecto para pequeñas empresas que comienzan con su presencia en línea.</p>
               </CardHeader>
               <CardContent>
-                <Button className="w-full mb-6 border border-gray-600 bg-transparent hover:bg-gray-800">
-                  Choose this plan
-                </Button>
+                  <a href="https://wa.me/5216871717189?text=Hola%20%F0%9F%91%8B%20me%20interesa%20el%20Plan%20B%C3%A1sico%20de%20p%C3%A1ginas%20web.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20lo%20que%20incluye%20y%20c%C3%B3mo%20contratarlo%3F " target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full mb-6 border border-gray-600 bg-transparent hover:bg-gray-800">
+                      Elegir este plan
+                    </Button>
+                  </a>
                 <div className="space-y-3">
-                  <p className="font-medium mb-3">What's Included:</p>
+                  <p className="font-medium mb-3">Qué incluye:</p>
                   {[
-                    "Basic workflow automation",
-                    "AI-powered personal assistant",
-                    "Standard analytics & reporting",
-                    "Email & chat support",
-                    "Up to 3 AI integrations"
+                    "Diseño de una Landing Page de 1 sección",
+                    "Estilo moderno y responsive (PC y móvil)",
+                    "Botón de WhatsApp o formulario de contacto",
+                    "Integración con redes sociales",
+                    "Entrega en 7-10 días hábiles"
                   ].map((feature, i) => (
                     <div key={i} className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-400" />
@@ -615,25 +587,27 @@ export default function Home() {
               <CardHeader className="text-center">
                 <div className="flex items-center gap-2 mb-2">
                   <Zap className="w-5 h-5 text-purple-400" />
-                  <span className="font-semibold">Professional</span>
+                  <span className="font-semibold">Profesional</span>
                 </div>
                 <div className="text-3xl font-bold">
-                  $75<span className="text-lg text-gray-400">/month</span>
+                  $4999<span className="text-lg text-gray-400">/mxn</span>
                 </div>
-                <p className="text-gray-400">Perfect for small businesses starting with AI automation.</p>
+                <p className="text-gray-400">Para negocios que quieren destacar con una web más robusta, visual y adaptable.</p>
               </CardHeader>
               <CardContent>
-                <Button className="w-full mb-6 gradient-purple hover:opacity-90">
-                  Choose this plan
-                </Button>
+                  <a href="https://wa.me/5216871717189?text=Hola%20%F0%9F%91%8B%20estoy%20interesado%20en%20el%20Plan%20Pro%20para%20mi%20p%C3%A1gina%20web.%20%C2%BFPodr%C3%ADas%20contarme%20m%C3%A1s%20sobre%20lo%20que%20incluye%20y%20los%20siguientes%20pasos%3F" target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full mb-6 gradient-purple hover:opacity-90">
+                      Elegir este plan
+                    </Button>
+                  </a>
                 <div className="space-y-3">
-                  <p className="font-medium mb-3">What's Included:</p>
+                  <p className="font-medium mb-3">Qué incluye:</p>
                   {[
-                    "Advanced workflow automation",
-                    "AI-driven sales & marketing tools",
-                    "Enhanced data analytics & insights",
-                    "Priority customer support",
-                    "Up to 10 AI integrations"
+                    "Diseño de sitio web de hasta 3 secciones",
+                    "Diseño personalizado adaptado a tu marca",
+                    "Formulario de contacto y botón a WhatsApp",
+                    "Optimización SEO básica + rendimiento móvil",
+                    "Entrega en 7-10 días hábiles"
                   ].map((feature, i) => (
                     <div key={i} className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-400" />
@@ -649,23 +623,25 @@ export default function Home() {
               <CardHeader className="text-center">
                 <div className="flex items-center gap-2 mb-2">
                   <Globe className="w-5 h-5" />
-                  <span className="font-semibold">Enterprise</span>
+                  <span className="font-semibold">Empresarial</span>
                 </div>
-                <div className="text-3xl font-bold">Custom</div>
-                <p className="text-gray-400">Perfect for small businesses starting with AI automation.</p>
+                <div className="text-3xl font-bold">Personalizado</div>
+                <p className="text-gray-400">Diseñado a la medida para marcas que buscan destacar y escalar digitalmente.</p>
               </CardHeader>
               <CardContent>
-                <Button className="w-full mb-6 border border-gray-600 bg-transparent hover:bg-gray-800">
-                  Schedule a call
-                </Button>
+                  <a href="https://wa.me/5216871717189?text=Hola%20%F0%9F%91%8B%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20el%20Plan%20Custom%20para%20una%20p%C3%A1gina%20web%20a%20medida.%20%C2%BFPodemos%20hablar%20de%20los%20detalles%20y%20precios%3F " target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full mb-6 border border-gray-600 bg-transparent hover:bg-gray-800">
+                    Elegir este plan
+                  </Button>
+                  </a>
                 <div className="space-y-3">
-                  <p className="font-medium mb-3">What's Included:</p>
+                  <p className="font-medium mb-3">Qué incluye:</p>
                   {[
-                    "Fully customizable AI automation",
-                    "Dedicated AI business consultant",
-                    "Enterprise-grade compliance",
-                    "24/7 VIP support",
-                    "Unlimited AI integrations"
+                    "Sitio web 100% personalizado",
+                    "Diseño visual avanzado",
+                    "Optimización SEO inicial para posicionamiento local",
+                    "Capacitación 1 a 1 o por videollamada para gestionar el sitio",
+                    "Integraciones IA"
                   ].map((feature, i) => (
                     <div key={i} className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-400" />
@@ -679,117 +655,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-purple-400 mb-4">Testimonials</p>
-            <h2 className="text-4xl font-bold mb-6">
-              Why Businesses Love Our AI Solutions
-            </h2>
-            <p className="text-gray-400">Real businesses, real results with AI automation.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                rating: 5,
-                text: "AI automation transformed our operations by eliminating repetitive tasks and improving efficiency. Scaling our workflow has never been easier!",
-                author: "James Carter",
-                role: "CEO at TechFlow Solutions"
-              },
-              {
-                rating: 5,
-                text: "With AI, we cut manual work and improved accuracy. Our team now focuses on high-impact tasks while automation handles the rest!",
-                author: "Sophia Martinez",
-                role: "Operations Manager at NexaCorp"
-              },
-              {
-                rating: 5,
-                text: "AI-driven insights doubled our sales efficiency. We now engage leads at the right time with smarter, data-backed decisions!",
-                author: "David Reynolds",
-                role: "Head of Sales at GrowthPeak"
-              },
-              {
-                rating: 5,
-                text: "Customer support is now seamless. Our response time improved drastically, and satisfaction levels are at an all-time high, thanks to xtract",
-                author: "Emily Wong",
-                role: "Customer Success Lead at SupportHive"
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="bg-gray-900/50 border-gray-800">
-                <CardContent className="p-6">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-300 mb-4 italic">"{testimonial.text}"</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-violet-600 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">
-                        {testimonial.author.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="font-medium">{testimonial.author}</p>
-                      <p className="text-sm text-gray-400">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-purple-400 mb-4">FAQs</p>
-            <h2 className="text-4xl font-bold mb-6">
-              We've Got the Answers
-              <br />
-              You're Looking For
-            </h2>
-            <p className="text-gray-400">Quick answers to your AI automation questions.</p>
-          </div>
-
-          <div className="space-y-4">
-            {[
-              "How can AI automation help my business?",
-              "Is AI automation difficult to integrate?",
-              "What industries can benefit from AI automation?",
-              "Do I need technical knowledge to use AI automation?",
-              "What kind of support do you offer?"
-            ].map((question, index) => (
-              <Card key={index} className="bg-gray-900/50 border-gray-800 hover:bg-gray-800/50 transition-colors cursor-pointer">
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between">
-                    <span className="font-medium">{question}</span>
-                    <ChevronDown className="w-5 h-5 text-gray-400" />
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-r from-purple-500/10 to-violet-600/10 rounded-2xl p-12 border border-purple-500/20">
             <h2 className="text-4xl font-bold mb-6">
-              Let AI do the Work so
+              Impulsa tu Negocio con una
               <br />
-              you can Scale Faster
+              Presencia Web Profesional
             </h2>
-            <p className="text-gray-400 mb-8">Book a Call Today and Start Automating</p>
-            <Button size="lg" className="gradient-purple hover:opacity-90">
-              Book a free call
-            </Button>
+            <p className="text-gray-400 mb-8">Agenda una llamada hoy y comienza a destacar en línea</p>
+              <a href="http://wa.me/5216871717189?text=Hola%20%F0%9F%91%8B%20me%20interesa%20saber%20m%C3%A1s%20sobre%20las%20p%C3%A1ginas%20web%20que%20ofrecen.%20%C2%BFPodr%C3%ADan%20darme%20informaci%C3%B3n%20sobre%20los%20planes%20y%20c%C3%B3mo%20funciona%20el%20proceso%3F%20Gracias. " target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="gradient-purple hover:opacity-90">
+                  Contactar Ahora
+                </Button>
+              </a>
           </div>
         </div>
       </section>
@@ -803,21 +683,11 @@ export default function Home() {
                 <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-violet-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">X</span>
                 </div>
-                <span className="text-xl font-bold">XTRACT</span>
+                <span className="text-xl font-bold">Lunova</span>
               </div>
               <p className="text-gray-400 mb-6">
-                Xtract - Automate Smarter, Optimize Faster, and Grow Stronger.
+                Impulsa tu Negocio con una Presencia Web Profesional.
               </p>
-              <div>
-                <p className="text-sm text-gray-400 mb-2">Join our newsletter</p>
-                <div className="flex gap-2">
-                  <Input
-                    placeholder="name@email.com"
-                    className="bg-gray-900 border-gray-700 text-white"
-                  />
-                  <Button className="gradient-purple">Subscribe</Button>
-                </div>
-              </div>
             </div>
 
             <div>
@@ -836,7 +706,6 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">404</a></li>
               </ul>
@@ -845,18 +714,16 @@ export default function Home() {
             <div>
               <h3 className="font-semibold mb-4">Socials</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Facebook</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
+                <li><a target="_blank" href="https://instagram.com/lunova_mx" className="hover:text-white transition-colors">Instagram</a></li>
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61577931126970" className="hover:text-white transition-colors">Facebook</a></li>
+
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-6 text-sm text-gray-400">
-              <span>Logo by flaticon</span>
-              <span>Visioned and Crafted by Kanishk Dubey</span>
+              <span>Visioned and Crafted by Lunova</span>
             </div>
             <span className="text-sm text-gray-400">© All right reserved</span>
           </div>
